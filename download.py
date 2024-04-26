@@ -37,7 +37,7 @@ def get_token():
     try:
         with open(TOKEN_FILE, 'r') as file:
             token = file.read()
-            return token
+            return token.strip()
     except Exception as e:
         return None
 
